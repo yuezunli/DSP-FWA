@@ -7,8 +7,7 @@ import cv2, os, dlib
 import numpy as np
 from py_utils.face_utils import lib
 from py_utils.vid_utils import proc_vid as pv
-from py_utils.DL.pytorch_utils.models.classifier \
-    import VGG, ResNet, SqueezeNet, DenseNet, InceptionNet, SPPNet, MobileNet, FPN
+from py_utils.DL.pytorch_utils.models.classifier import SPPNet
 
 sample_num = 10
 # Employ dlib to extract face area and landmark points
@@ -65,21 +64,7 @@ def draw_face_score(im, face_info, prob):
     
 def setup(args):
     num_class = 2
-    if args.arch.lower() == 'vgg16':
-        net = VGG(args.layers, num_class)
-    elif args.arch.lower() == 'resnet':
-        net = ResNet(args.layers, num_class)
-    elif args.arch.lower() == 'densenet':
-        net = DenseNet(args.layers, num_class)
-    elif args.arch.lower() == 'inceptionnet':
-        net = InceptionNet(num_class=num_class)
-    elif args.arch.lower() == 'squeezenet':
-        net = SqueezeNet(num_class=num_class)
-    elif args.arch.lower() == 'mobilenet':
-        net = MobileNet(num_class=num_class, version=2)
-    elif args.arch.lower() == 'fpn':
-        net = FPN(backbone=args.layers, num_class=num_class)
-    elif args.arch.lower() == 'sppnet':
+    if args.arch.lower() == 'sppnet':
         net = SPPNet(backbone=args.layers, num_class=num_class)
     net = net.cuda()
     net.eval()
