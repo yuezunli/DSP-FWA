@@ -7,8 +7,9 @@ We propose an improved version of our previous work
 "Exposing DeepFake Videos By Detecting Face Warping Artifacts". We employ a dual spatial pyramid strategy on both
 image and feature level to tackle multi-scale issues.
 
-<img style="float: center;" src="src/overview.jpg", width="300">
-
+<p align="center">
+  <img src="src/overview.jpg" alt="eval" width="350"/>
+</p>
 
 ### Requirements
 - PyTorch 1.0.1
