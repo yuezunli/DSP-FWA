@@ -18,7 +18,7 @@ image and feature level to tackle multi-scale issues.
 - Python3 with packages opencv3 and dlib
 
 ### Toy
-Check `demo.py` in `toy` fodler. This script will return a list that contains the "fake" probability of each input data. 
+Check `demo.py` in `toy` folder. This script will return a list that contains the "real" probability of each input data. 
 Note we only suppert ResNet-50 based SSPNet model in this version. The checkpoint can be downloaded
  [here.](https://drive.google.com/open?id=13wbA5kHRGODBDdiJ2gPeB1XK4KiCh-Im)
 
