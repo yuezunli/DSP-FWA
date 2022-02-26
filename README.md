@@ -20,7 +20,7 @@ image and feature level to tackle multi-scale issues.
 ### Toy
 Check `demo.py` in `toy` folder. This script will return a list that contains the "real" probability of each input data. 
 Note we only suppert ResNet-50 based SSPNet model in this version. The checkpoint can be downloaded
- [here.](https://drive.google.com/open?id=13wbA5kHRGODBDdiJ2gPeB1XK4KiCh-Im)
+ ~~[here.](https://drive.google.com/open?id=13wbA5kHRGODBDdiJ2gPeB1XK4KiCh-Im)~~[here.](https://1drv.ms/u/s!As4tun0sWfKsgdtSmFu4DlG5jyuC_Q?e=hDbBb6)
 
 ```commandline
     python demo.py \
